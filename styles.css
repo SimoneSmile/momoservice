@@ -94,7 +94,9 @@ button { color: inherit; }
 .image-card { position: relative; overflow: hidden; padding: 16px; border: 1px solid white; border-radius: 38px 38px 120px 38px; background: rgba(255, 255, 255, .88); box-shadow: var(--shadow-lg); transform: rotate(1.5deg); }
 .image-card picture { display: block; overflow: hidden; border-radius: 26px 26px 108px 26px; background: #eef5fa; }
 .image-card img { display: block; width: 100%; height: auto; object-fit: contain; }
-.floating-note { position: absolute; top: 60px; left: -65px; display: flex; align-items: center; gap: 12px; padding: 14px 17px; border: 1px solid #dfe9ef; border-radius: 16px; background: rgba(255, 255, 255, .94); box-shadow: var(--shadow-sm); transform: rotate(-2deg); }
+.floating-note { position: absolute; z-index: 2; top: 60px; left: -65px; display: flex; align-items: center; gap: 12px; padding: 14px 17px; border: 1px solid #dfe9ef; border-radius: 22px 22px 8px 22px; background: #fff; box-shadow: var(--shadow-sm); transform: rotate(-2deg); }
+.floating-note::before { content: ""; position: absolute; right: 28px; bottom: -19px; border-style: solid; border-width: 19px 4px 0 20px; border-color: #dfe9ef transparent transparent; transform: rotate(-5deg); }
+.floating-note::after { content: ""; position: absolute; right: 30px; bottom: -16px; border-style: solid; border-width: 17px 3px 0 18px; border-color: #fff transparent transparent; transform: rotate(-5deg); }
 .floating-note > span { display: grid; flex: 0 0 34px; place-items: center; width: 34px; height: 34px; color: white; border-radius: 50%; background: var(--success); font-weight: 800; }
 .floating-note p { display: flex; flex-direction: column; margin: 0; }
 .floating-note strong { font-size: 12px; }
