@@ -254,7 +254,7 @@ footer { padding-top: 70px; color: #a8bac8; background: var(--navy-950); }
   .hero__visual { width: min(88%, 320px); margin-top: 58px; justify-self: center; }
   .image-card { border-radius: 26px 26px 80px 26px; transform: none; }
   .image-card picture { border-radius: 17px 17px 68px 17px; }
-  .floating-note { top: -50px; left: 50%; max-width: 260px; }
+  .floating-note { top: auto; bottom: calc(100% + 12px); left: 50%; max-width: 260px; }
   .service-strip__grid { grid-template-columns: 1fr; }
   .service-strip__grid > div { padding: 18px 6px; }
   .service-strip__grid > div + div, .service-strip__grid > div:nth-child(3), .service-strip__grid > div:nth-child(4) { border-top: 1px solid #e3e9ee; border-left: 0; }
