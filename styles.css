@@ -250,8 +250,8 @@ footer { padding-top: 70px; color: #a8bac8; background: var(--navy-950); }
   .hero__proof { margin-top: 34px; }
   .hero__proof > div { padding-right: 10px; }
   .hero__proof > div + div { padding-left: 13px; }
-  .hero__visual { width: min(100%, 360px); justify-self: center; }
-  .image-card { border-radius: 26px 26px 80px 26px; }
+  .hero__visual { width: min(88%, 320px); justify-self: center; }
+  .image-card { border-radius: 26px 26px 80px 26px; transform: none; }
   .image-card picture { border-radius: 17px 17px 68px 17px; }
   .floating-note { top: 24px; left: -4px; }
   .service-strip__grid { grid-template-columns: 1fr; }
